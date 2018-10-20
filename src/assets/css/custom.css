@@ -1,0 +1,134 @@
+#w1{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.timer-holder{
+	margin: -0.9em 0 0;
+}
+.numbers-list{
+	margin: 0 -0.5em 40px;
+	padding: 0;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.numbers-list li{
+	font-size: 18px;
+	line-height: 1;
+	padding: 0 0.5em 1em;
+	margin: 0;
+}
+.numbers-list li>a{
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px 0 0;
+	display: block;
+	border: 2px solid #fff;
+	color: #fff;
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: 0;
+	-webkit-transition: 0.25s all ease;
+	transition: 0.25s all ease;
+}
+.numbers-list li.active>a,
+.numbers-list li>a:hover{
+	background: #312450;	
+}
+.numbers-list li.active>a{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.pending-block,
+.success-block{
+	background: #428c5d;
+	padding: 16px 25px;
+	border: 1px solid rgba(255,255,255,0.55);
+	border-radius: 5px;
+	color: #fff;
+}
+.pending-block>b,
+.success-block>b{
+	display: block;
+	margin: 0 0 2px;
+	text-transform: uppercase;
+}
+.pending-block{
+	background: #b75454;
+}
+#footer.wrapper>.inner{
+	padding: 2em;
+}
+#footer.wrapper>.inner .menu{
+	margin: 0;
+}
+#wrapper.status-check{
+	text-align: center;
+}
+#wrapper.status-check .email-input{
+	max-width: 450px;
+	margin: 0 auto;
+}
+#wrapper.status-check .email-input input{
+	font-size: 16pt;
+	text-align: center;
+}
+#wrapper.status-check #intro p{
+	margin-bottom: 1em;
+}
+#wrapper.status-check ul.actions{
+	margin: 3em 0 0;
+	justify-content: center;
+}
+#wrapper.status-check ul.number-boxes{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+#wrapper.status-check ul.number-boxes input{
+	border-color: rgba(255, 255, 255, 0.3);
+	text-align: center;
+	font-weight: 700;
+	color: #fff;
+	font-size: 17pt;
+	width: 3.5em;
+}
+#wrapper.status-check ul.number-boxes li{
+	padding: 0 1em;
+}
+#wrapper.status-check .table-wrapper{
+	text-align: left;
+	padding: 2em 0 0;
+}
+#wrapper.status-check .pending-block,
+#wrapper.status-check .success-block{
+	text-align: left;
+}
+#wrapper.status-check .table-wrapper table th{
+	padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+	#wrapper.status-check ul.number-boxes li{
+		padding: 0;
+	}
+}
