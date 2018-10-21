@@ -15,6 +15,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body class="is-preload">
-	<div id="app"></div>
+	<div id="app">
+	</div>
+
+	<template id="countdown-template">
+		<span>
+			{{ days | two_digits }} Days
+			{{ hours | two_digits }}h
+			{{ minutes | two_digits }}m
+			{{ seconds | two_digits }}s
+		</span>
+	</template>
 </body>
 </html>

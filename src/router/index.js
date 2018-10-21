@@ -6,6 +6,8 @@ import EnterDetails from '@/pages/EnterDetails'
 import FundDetails from '@/pages/FundDetails'
 
 import CheckStatus from '@/pages/check_status/CheckStatus'
+import VerifyDetails from '@/pages/check_status/VerifyDetails'
+import ViewStatus from '@/pages/check_status/ViewStatus'
 
 Vue.use(Router)
 
@@ -40,6 +42,18 @@ export default new Router({
 		name: 'CheckStatus',
 		meta: { layout: "status" },
 		component: CheckStatus
+	},
+	{
+		path: '/verify-details',
+		name: 'VerifyDetails',
+		meta: { layout: "status" },
+		component: VerifyDetails
+	},
+	{
+		path: '/view-status',
+		name: 'ViewStatus',
+		meta: { layout: "status" },
+		component: ViewStatus
 	}
 	],
 	linkActiveClass: "exact-active",

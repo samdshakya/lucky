@@ -17,7 +17,7 @@
 						<li>
 							<router-link to="/">
 								<span>Online Lucky Draw 2018</span>
-								<i>NPR 1450 Collected</i>
+								<!-- <i>NPR 1450 Collected</i> -->
 							</router-link>
 						</li>
 						<li>
@@ -31,6 +31,9 @@
 						</li>
 						<li>
 							<router-link to="/fund-details">Enter the contest</router-link>
+						</li>
+						<li>
+							<router-link to="/check-status">Check Entry Status</router-link>
 						</li>
 					</ul>
 				</nav>

@@ -15,16 +15,16 @@
 				<nav>
 					<ul>
 						<li>
+							<router-link to="/">Online Lucky Draw Home</router-link>
+						</li>
+						<li>
 							<router-link to="/check-status">Check Entry Status</router-link>
 						</li>
 						<li>
-							<router-link to="/verification">Verification</router-link>
+							<router-link to="/verify-details">Verification</router-link>
 						</li>
 						<li>
-							<router-link to="/your-status">Your Status</router-link>
-						</li>
-						<li>
-							<router-link to="/">Online Lucky Draw Home</router-link>
+							<router-link to="/view-status">Your Status</router-link>
 						</li>
 					</ul>
 				</nav>
