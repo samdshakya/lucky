@@ -3,6 +3,32 @@
 	position: relative;
 	width: 100%;
 }
+@keyframes flickerAnimation {
+	0%   { opacity:1; }
+	50%  { opacity:0; }
+	100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+	0%   { opacity:1; }
+	50%  { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+	0%   { opacity:1; }
+	50%  { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+	0%   { opacity:1; }
+	50%  { opacity:0; }
+	100% { opacity:1; }
+}
+.animate-flicker {
+	-webkit-animation: flickerAnimation 2.5s ease 1s infinite;
+	-moz-animation: flickerAnimation 2.5s ease 1s infinite;
+	-o-animation: flickerAnimation 2.5s ease 1s infinite;
+	animation: flickerAnimation 2.5s ease 1s infinite;
+}
 .timer-holder{
 	margin: -0.9em 0 0;
 }
@@ -40,11 +66,11 @@
 	-webkit-transition: 0.25s all ease;
 	transition: 0.25s all ease;
 }
-.numbers-list li.active>a,
+.numbers-list li>a.active,
 .numbers-list li>a:hover{
 	background: #312450;	
 }
-.numbers-list li.active>a{
+.numbers-list li>a.active{
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	-o-transform: scale(1.2);
@@ -77,6 +103,10 @@
 	font-size: 15px;
 	line-height: 20px;
 	padding: 10px 15px;
+}
+.err.err-check{
+	max-width: 425px;
+	margin: 30px auto 0;
 }
 #footer.wrapper>.inner{
 	padding: 2em;

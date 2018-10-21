@@ -3747,14 +3747,15 @@
 				background: #5052b5;
 				font-style: normal;
 				color: #fff;
-				padding: 7px 21px;
+				padding: 7px 31px;
 				border-radius: 100px;
-				font-size: 12px;
+				font-size: 11px;
 				line-height: 16px;
 				font-weight: bold;
 				margin: 6px 0 0;
-				min-width: 100px;
-				text-transform: none;		
+				min-width: 155px;
+				text-transform: none;
+				text-align: center;		
 			}
 			#sidebar nav a:before, #sidebar nav a:after {
 				border-radius: 0.2em;

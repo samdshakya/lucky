@@ -6,19 +6,12 @@
 					<h2>Select your Lucky Number</h2>
 					<p>Select <b>4 numbers</b> from below:</p>
 					<ul class="numbers-list">
-						<li><a href="#">0</a></li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">6</a></li>
-						<li><a href="#">7</a></li>
-						<li><a href="#">8</a></li>
-						<li><a href="#">9</a></li>
+						<li v-for="(item, index) in items">
+							<a href="javascript:void(0)" v-on:click="selectLuckyNum(index,$event)">{{ item }}</a>
+						</li>						
 					</ul>
 					<ul class="actions">
-						<li><a href="#two" class="button scrolly">Next Step</a></li>
+						<li><a href="#two" class="button">Next Step</a></li>
 						<li><a href="#" class="button">Reset Numbers</a></li>
 					</ul>
 				</div>
@@ -32,7 +25,12 @@
 		name: 'SelectNumber',
 		data () {
 			return {
-				// msg: 'Welcome to Your Vue.js App'
+				items: [0,1,2,3,4,5,6,7,8,9]
+			}
+		},
+		methods: {
+			selectLuckyNum(index,evt) {
+				evt.target.classList.add("active");
 			}
 		}
 	}

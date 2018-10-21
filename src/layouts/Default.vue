@@ -1,13 +1,3 @@
-<script>
-	import FooterBar from "@/components/FooterBar";
-
-	export default {
-		components: {
-			FooterBar
-		}
-	};
-</script>
-
 <template>
 	<div id="w1">
 		<section id="sidebar">
@@ -17,7 +7,7 @@
 						<li>
 							<router-link to="/">
 								<span>Online Lucky Draw 2018</span>
-								<!-- <i>NPR 1450 Collected</i> -->
+								<i class="animate-flicker">ENTRY NOW OPEN</i>
 							</router-link>
 						</li>
 						<li>
@@ -46,3 +36,13 @@
 		<footer-bar />
 	</div>
 </template>
+
+<script>
+	import FooterBar from "@/components/FooterBar";
+
+	export default {
+		components: {
+			FooterBar
+		}
+	};
+</script>
