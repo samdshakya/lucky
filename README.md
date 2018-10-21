@@ -1,4 +1,4 @@
-# Online Lucky Draw
+# OnlineLuckyDraw
 
 > A Vue.js project
 
